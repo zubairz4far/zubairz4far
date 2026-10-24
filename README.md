@@ -6,6 +6,26 @@ I build evaluated AI systems where **a test result, safety boundary, and reprodu
 
 **[Selected portfolio](#selected-engineering-work) · [AI Automation Doctor demo](https://zubairz4far.github.io/ai-automation-doctor/) · [Hugging Face](https://huggingface.co/zubairz4far)**
 
+## Start here — choose an engineering track
+
+The projects below are **code-first engineering case studies**, not interchangeable product demos. Each links to its implementation, tests, evaluation artifacts, and known limitations.
+
+| If you are reviewing me for… | Start with | What to inspect |
+| --- | --- | --- |
+| **LLM / Agent Engineer** | [Qwen3 tool calling](https://github.com/zubairz4far/qwen3-tool-calling-qlora) → [ToolGuard](https://github.com/zubairz4far/evaluated-order-support-agent) | Fine-tuning protocol, locked benchmark, 78% blocked release, argument validation, failures |
+| **Applied AI / RAG Engineer** | [Production RAG Engine](https://github.com/zubairz4far/production-rag-engine) | Hybrid retrieval, grounded citations, refusal behavior, adversarial evaluation; seeded demo differs from full stack |
+| **AI Automation Engineer** | [AI Automation Doctor](https://github.com/zubairz4far/ai-automation-doctor) | [Interactive read-only demo](https://zubairz4far.github.io/ai-automation-doctor/), deterministic controls, approval gates, failure recovery |
+| **AI Security Engineer** | [MCP Agent Firewall](https://github.com/zubairz4far/mcp-agent-firewall) | Tool schema pinning, deterministic policy, signed approval, response-side containment |
+| **MLOps / Platform Engineer** | [Production MLOps Control Plane](https://github.com/zubairz4far/production-mlops-control-plane) → [Qwen Serving](https://github.com/zubairz4far/production-qwen-serving-platform) | Promotion gates, drift, rollback, serving guardrails, CI and frozen evidence |
+| **Realtime AI Engineer** | [Realtime Voice Agent](https://github.com/zubairz4far/realtime-voice-agent-platform) | WebRTC architecture, interruption handling, signed backend tool execution, latency measurement |
+
+### How to verify the claims
+
+- **Read the test and evaluation artifacts** linked inside each repository; a README metric alone is not proof of an independently reproduced result.
+- **Run the repository-specific instructions and tests** in its README and CI workflow. Some full-stack or real-model evaluations need model credentials, infrastructure, or a GPU.
+- **Distinguish demonstration from deployment.** An offline benchmark, synthetic simulation, live demo, and production customer deployment are different forms of evidence.
+- **Review known failures.** In particular, the Qwen-linked ToolGuard release is **blocked** under its published release rule; these limitations are intentional and visible.
+
 ## Selected engineering work
 
 | Project | Engineering focus | Evidence and limitations |
